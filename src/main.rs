@@ -1,18 +1,9 @@
 mod chapter2_challenge;
 mod chapter4_challenge;
+mod chapter5_challenge;
 
 fn main() {
     // chapter2_challenge::main();
     // chapter4_challenge::main();
-
-    let mut matrix = [[1,2,3],
-                                    [4,5,6],
-                                    [7,8,9]];
-    for row in matrix.iter_mut() {
-        for num in row.iter_mut() {
-            *num += 10;
-            print!("{}\t", num);
-        }
-        println!();
-    }
+    chapter5_challenge::main();
 }
