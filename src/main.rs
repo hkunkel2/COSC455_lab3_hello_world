@@ -2,6 +2,8 @@ mod task5;
 
 fn main() {
     // this is my hello world program comment
-    let mut x: f32 = 10.2346544924355423; // must be 0-255
-    println!("x is {}", x);
+    let a = 10;
+    let b = 3.0;
+    let c = a as f64 / b;
+    println!("c is {}", c);
 }
