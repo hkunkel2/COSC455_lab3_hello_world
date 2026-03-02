@@ -1,9 +1,7 @@
-mod task5;
-
 fn main() {
     // this is my hello world program comment
     let a = 10;
     let b = 3.0;
     let c = a as f64 / b;
-    println!("c is {}", c);
+    println!("c is {0:08.3}\na is {1}\nonce again, c is {0}", c, a);
 }
