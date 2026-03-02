@@ -1,6 +1,6 @@
+mod chatper2_challenge;
+mod task5;
+
 fn main() {
-    let letter = 'a';
-    let number = '1';
-    let finger = '\u{261D}';
-    println!("{}\n{}\n{}", letter, number, finger);
+    chatper2_challenge::main();
 }
