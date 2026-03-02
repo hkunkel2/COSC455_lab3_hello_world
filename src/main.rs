@@ -7,5 +7,5 @@ fn main() {
     let number = parking_lot[1][2];
     println!("number is {}", number);
 
-    let garage: [[[0; 100]; 20]; 5];
+    let garage = [[[0i32; 100]; 20]; 5];
 }
