@@ -2,10 +2,11 @@ mod chatper2_challenge;
 
 fn main() {
     // chatper2_challenge::main();
-    let parking_lot =   [[1, 2, 3],
-                                        [4, 5, 6]];
-    let number = parking_lot[1][2];
-    println!("number is {}", number);
+    let mut stuff: (u8, f32, char) = (10, 3.14, 'x');
+    stuff.0 += 3;
+    let first_item = stuff.0;
+    println!("first_item is {}", first_item);
 
-    let garage = [[[0i32; 100]; 20]; 5];
+    let (a, b, c) = stuff;
+    println!("b is {}", b);
 }
