@@ -2,11 +2,24 @@ mod chatper2_challenge;
 
 fn main() {
     // chatper2_challenge::main();
-    let mut stuff: (u8, f32, char) = (10, 3.14, 'x');
-    stuff.0 += 3;
-    let first_item = stuff.0;
-    println!("first_item is {}", first_item);
+    say_hello();
+    say_a_number(23);
 
-    let (a, b, c) = stuff;
-    println!("b is {}", b);
+    let x = 1;
+    let y = 2;
+
+    say_a_sum(x, y);
+    say_a_number(x as i32);
+}
+
+fn say_hello() {
+    println!("Hello!")
+}
+
+fn say_a_number(number: i32) {
+    println!("number is {}", number);
+}
+
+fn say_a_sum(num1: u8, num2: u8) {
+    println!("sum is {}", num1 + num2);
 }
