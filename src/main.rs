@@ -5,24 +5,14 @@ fn main() {
     // chapter2_challenge::main();
     // chapter4_challenge::main();
 
-    let x = 3;
-    let y = 5;
+    let make_x_odd = true;
+    let x = if make_x_odd {1} else {2};
 
-    if x > y {
-        println!("x is greater than y")
-    } else {
-        if x == y {
-            println!("x is equal to y")
-        } else {
-            println!("x is less than to y")
-        }
-    }
+    // if make_x_odd {
+    //     x = 1;
+    // } else {
+    //     x = 2
+    // }
 
-    if x > y {
-        println!("x is greater than y")
-    } else if x == y {
-            println!("x is equal to y")
-    } else {
-            println!("x is less than to y")
-    }
+    println!("x is {}", x);
 }
